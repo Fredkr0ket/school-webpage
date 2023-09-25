@@ -8,7 +8,7 @@ Php exceptions is een handige tool die je kan gebruiken voor het afhandelen van 
 - **InvalidArgumentException**
 	deze error word getrowed waneer er een verkeerde soort parameter word gegeven aan een functie.
 
-## Aangepaste exception class maken
+## Aangepaste exception class
 ```php
 class CustomException extends Exception {
     public function __construct($errorMessage, $errorCode) {

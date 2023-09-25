@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'School',
-  tagline: 'Dinosaurs are cool',
+  title: 'School Opdrachten',
+  tagline: 'Typescript > PHP',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,7 +45,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -82,13 +82,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Opdrachten',
           },
-          {
-            to: '/docs/php', // Update with your custom page URL
-            label: 'PHP',
-            position: 'left',
-          },
+          // {
+          //   to: '/docs/php', // Update with your custom page URL
+          //   label: 'PHP',
+          //   position: 'left',
+          // },
         ],
       },
       // footer: {
@@ -137,6 +137,7 @@ const config = {
       //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       // },
       prism: {
+        additionalLanguages: ['php'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
